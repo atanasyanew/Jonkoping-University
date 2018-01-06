@@ -31,3 +31,30 @@ The course includes the following elements:
 - HTML 5
 
 ### [Server-side Web Development (TPWK16)](http://ju.se/JTH/en/education/courses.html?courseCode=TPWK16&semester=20161&lang=en) 
+
+
+
+TODO:
+
+### My Objectives & Progress
+
+1. Group Project (Assignments folder)
+    - [x] [FitLog](https://fitlog-app.firebaseapp.com/signin.html), 2017-06-22, Group 10, Grade: 5	 
+
+2. Labs (Assignments folder)		 	 
+    - [x] [Lab 1 - Guess the number game](https://rawgit.com/atanasyanew/Jonkoping-University/master/Client-side%20Programming%20(TKPK17)/Assignments/Labs_AY/Lab%201%20-%20GuessNumberGame/GuessNumberGame.html) 	 
+    - [x] [Lab 2 - Basic Math with JS](https://rawgit.com/atanasyanew/Jonkoping-University/master/Client-side%20Programming%20(TKPK17)/Assignments/Labs_AY/Lab%202%20-%20BasicMathWithJs/BasicMathWithJs.html), Very very basic math operations with js
+    - [x] [Lab 3 - Pub point of sale app](https://rawgit.com/atanasyanew/Jonkoping-University/master/Client-side%20Programming%20(TKPK17)/Assignments/Labs_AY/Lab%203%20-%20PubApp/PubApp.html), Point Of Sale application
+    - [x] [Lab 4 - Breaking News Renewal](https://rawgit.com/atanasyanew/Jonkoping-University/master/Client-side%20Programming%20(TKPK17)/Assignments/Labs_AY/Lab%204%20-%20BreakingNewsRenewal/BreakingNewsRenewal.html), Content renewal every 5 sec
+    - [x] [Lab 5 - The Guessing Game](https://rawgit.com/atanasyanew/Jonkoping-University/master/Client-side%20Programming%20(TKPK17)/Assignments/Labs_AY/Lab%205%20-%20TheGuessingGame/TheGuessingGame.html) 	 
+    - [x] [Lab 6 - Address Book](https://rawgit.com/atanasyanew/Jonkoping-University/master/Client-side%20Programming%20(TKPK17)/Assignments/Labs_AY/Lab%206%20-%20AddressBook/AddressBook.html), LocalStorage Address Book	 
+    - [x] [Lab 7 - Secret Message Decipherment](https://rawgit.com/atanasyanew/Jonkoping-University/master/Client-side%20Programming%20(TKPK17)/Assignments/Labs_AY/Lab%207%20-%20SecretMessage/SecretMessage.html), Decipherment message base on instructions
+    - [x] [Lab 8 - Breakout-game](https://rawgit.com/atanasyanew/Jonkoping-University/master/Client-side%20Programming%20(TKPK17)/Assignments/Labs_AY/Lab%208%20-%20BreakoutGame/breakout-game.html), Simple Breakout-game	 
+    - [x] Lab 9 covered in lab 8
+    - [x] [Count Down Page](https://rawgit.com/atanasyanew/Labs/master/CountDownPage/CountDownPage.html), Count Down Page with JS
+
+
+
+### My Objectives & Progress
+1. Group Project
+    - [x] [4Dice-game](https://dice4-game.firebaseapp.com/)

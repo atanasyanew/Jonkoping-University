@@ -74,14 +74,16 @@ Repository for the course [Client-side Programming (TKPK17)](http://ju.se/en/stu
     - [x] [FitLog](https://fitlog-app.firebaseapp.com/signin.html), 2017-06-22, Group 10, Grade: 5	 
 
 2. Labs (Assignments folder)		 	 
-    - [x] Lab 1 2017-02-15 	 
-    - [x] Lab 2 2017-02-18 	 
-    - [x] Lab 3 2017-03-27
-    - [x] Lab 4 2017-05-10	 
-    - [x] Lab 5 2017-05-18 	 
-    - [x] Lab 6 2017-06-01 	 
-    - [x] Lab 8 2017-06-26 	 
-    - [x] Lab 9 2017-04-11
+    - [x] [Lab 1 - Guess the number game](https://rawgit.com/atanasyanew/Jonkoping-University/master/Client-side%20Programming%20(TKPK17)/Assignments/Labs_AY/Lab%201%20-%20GuessNumberGame/GuessNumberGame.html) 	 
+    - [x] [Lab 2 - Basic Math with JS](https://rawgit.com/atanasyanew/Jonkoping-University/master/Client-side%20Programming%20(TKPK17)/Assignments/Labs_AY/Lab%202%20-%20BasicMathWithJs/BasicMathWithJs.html), Very very basic math operations with js
+    - [x] [Lab 3 - Pub point of sale app](https://rawgit.com/atanasyanew/Jonkoping-University/master/Client-side%20Programming%20(TKPK17)/Assignments/Labs_AY/Lab%203%20-%20PubApp/PubApp.html), Point Of Sale application
+    - [x] [Lab 4 - Breaking News Renewal](https://rawgit.com/atanasyanew/Jonkoping-University/master/Client-side%20Programming%20(TKPK17)/Assignments/Labs_AY/Lab%204%20-%20BreakingNewsRenewal/BreakingNewsRenewal.html), Content renewal every 5 sec
+    - [x] [Lab 5 - The Guessing Game](https://rawgit.com/atanasyanew/Jonkoping-University/master/Client-side%20Programming%20(TKPK17)/Assignments/Labs_AY/Lab%205%20-%20TheGuessingGame/TheGuessingGame.html) 	 
+    - [x] [Lab 6 - Address Book](https://rawgit.com/atanasyanew/Jonkoping-University/master/Client-side%20Programming%20(TKPK17)/Assignments/Labs_AY/Lab%206%20-%20AddressBook/AddressBook.html), LocalStorage Address Book	 
+    - [x] [Lab 7 - Secret Message Decipherment](https://rawgit.com/atanasyanew/Jonkoping-University/master/Client-side%20Programming%20(TKPK17)/Assignments/Labs_AY/Lab%207%20-%20SecretMessage/SecretMessage.html), Decipherment message base on instructions
+    - [x] [Lab 8 - Breakout-game](https://rawgit.com/atanasyanew/Jonkoping-University/master/Client-side%20Programming%20(TKPK17)/Assignments/Labs_AY/Lab%208%20-%20BreakoutGame/breakout-game.html), Simple Breakout-game	 
+    - [x] Lab 9 covered in lab 8
+    - [x] [Count Down Page](https://rawgit.com/atanasyanew/Labs/master/CountDownPage/CountDownPage.html), Count Down Page with JS
  	 
 3. Exam
     - [x] JavaScript Multiple choice, 2017-09-28, Score: 100% correct
