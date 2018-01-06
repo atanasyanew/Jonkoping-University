@@ -5,7 +5,7 @@ Repository for the course [Client-side Programming (TKPK17)](http://ju.se/en/stu
 
 ### Content    
 
-- General  
+- General Information  
     - Welcome to the course.pdf
     - [Syllabus for TKPK17](http://ju.se/en/study-at-ju/courses.html?courseCode=TKPK17&semester=20171&revision=)
 

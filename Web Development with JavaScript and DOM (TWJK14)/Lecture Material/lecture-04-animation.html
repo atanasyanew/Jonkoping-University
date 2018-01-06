@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Animation</title>
+		
+		<style rel="stylesheet">
+			
+			#box{
+				background-color: aqua;
+				width: 100px;
+				height: 100px;
+			}
+			
+		</style>
+		
+		<script type="text/javascript">
+			
+			document.addEventListener("DOMContentLoaded", function(){
+				
+				var box = document.querySelector("#box")
+				var growButton = document.querySelector("#growButton")
+				
+				growButton.addEventListener('click', function(){
+					
+					var counter = 20
+					
+					function grow(){
+						box.style.width = (box.clientWidth+2)+'px'
+						counter--
+						if(counter == 0){
+							clearInterval(intervalId)
+						}
+					}
+					
+					var intervalId = setInterval(grow, 50)
+					
+				})
+				
+			})
+			
+		</script>
+		
+	</head>
+	<body>
+		
+		<button id="growButton">Grow</button>
+		
+		<div id="box"></div>
+		
+	</body>
+</html>
