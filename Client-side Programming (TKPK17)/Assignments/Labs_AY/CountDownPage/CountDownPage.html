@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AY LAB</title>
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('background.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.footer {
+ color: #999;
+}
+
+</style>
+
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+   <!-- Logo -->Count Down Page
+  </div>
+    <br>
+    <!-- <h2 class="w3-jumbo w3-animate-top w3-center">Title</h2> -->
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
+
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-xlarge w3-center" id="countdown"> </p>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    Atanas Yanev Labs |
+    <a href="https://github.com/atanasyanew"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a> |
+    <a href="http://lnked.in/ayanev"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
+  </div>
+</div>
+
+
+
+</body>
+</html>
+
+
+<script>
+
+    CountDownTimer('01/01/2018', 'countdown');
+   // CountDownTimer('01/01/2018 00:01 AM', 'newcountdown');
+
+
+    function CountDownTimer(dt, id)
+    {
+        var end = new Date(dt);
+
+        var _second = 1000;
+        var _minute = _second * 60;
+        var _hour = _minute * 60;
+        var _day = _hour * 24;
+        var timer;
+
+        function showRemaining() {
+            var now = new Date();
+            var distance = end - now;
+            if (distance < 0) {
+
+                clearInterval(timer);
+                document.getElementById(id).innerHTML = 'EXPIRED!';
+
+                return;
+            }
+            var days = Math.floor(distance / _day);
+            var hours = Math.floor((distance % _day) / _hour);
+            var minutes = Math.floor((distance % _hour) / _minute);
+            var seconds = Math.floor((distance % _minute) / _second);
+
+            document.getElementById(id).innerHTML = "<b>" + days + '</b> Days ';
+            document.getElementById(id).innerHTML += "<b>" + hours + '</b> Hrs ';
+            document.getElementById(id).innerHTML += "<b>" + minutes + '</b> Mins ';
+            document.getElementById(id).innerHTML += "<b>" + seconds + '</b> Secs Left';
+        }
+
+        timer = setInterval(showRemaining, 800);
+    }
+
+</script>
+
+<!--
+<div id="countdown"></div>
+<div id="newcountdown"></div>
+-->

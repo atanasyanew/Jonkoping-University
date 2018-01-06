@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>AY LAB</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body {
+      padding-top: 70px;
+      padding-bottom: 70px;
+      background-color: #DCDCDC;
+      /*
+      background-color: #333;
+      color: #fff;
+      text-shadow: 0 1px 3px rgba(0,0,0,.5);
+      */
+    }
+    
+    footer {
+      color: #999;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!--  navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand">Address Book</a>
+      </div>
+
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+  <div class="container body-content">
+
+    <div class="">
+      <h3>Description</h3>
+      <p>Address Book is simple JavaScript application with which the user can create and read records. Each record contains
+        Name, Phone, Email, Birth Date.</p>
+      <p>Application use localStorage to store and manipulate data in JSON format</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Add Contact</h3>
+        <div class="well form-horizontal">
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-3 control-label">Name</label>
+            <div class="col-md-8">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input id="FormName" required name="first_name" placeholder="Name" class="form-control" type="text">
+              </div>
+            </div>
+          </div>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-3 control-label">E-Mail</label>
+            <div class="col-md-8">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                <input id="FormEmail" required name="email" placeholder="E-Mail Address" class="form-control" type="email">
+              </div>
+            </div>
+          </div>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-3 control-label">Phone #</label>
+            <div class="col-md-8 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                <input id="FormPhone" required name="phone" placeholder="Phone number" class="form-control" type="number">
+              </div>
+            </div>
+          </div>
+          <!-- Number input-->
+          <div class="form-group">
+            <label class="col-md-3 control-label">Birthdate</label>
+            <div class="col-md-8 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input id="FormBirth" required name="birth_date" placeholder="Date of birth" class="form-control" type="date">
+              </div>
+            </div>
+          </div>
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-md-3 control-label"></label>
+            <div class="col-md-4">
+              <button type="submit" onclick="createContactPerson()" class="btn btn-warning">Create Record <span class="glyphicon glyphicon-send"></span></button>
+            </div>
+          </div>
+        </div>
+
+
+        <h3>Contact as cards</h3>
+        <div id="cards" class=""></div>
+
+      </div>
+
+      <div class="col-md-6">
+        <h3>Your contacts</h3>
+        <h4 id="bookRecords"></h4>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>E-Mail</th>
+              <th>Phone</th>
+              <th>Birthdate</th>
+            </tr>
+          </thead>
+          <tbody id="addressBookTable">
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+
+    <hr>
+    <footer class="">
+      <p class="">
+        Atanas Yanev Labs |
+        <a href="https://github.com/atanasyanew"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a> |
+        <a href="http://lnked.in/ayanev"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
+      </p>
+    </footer>
+
+  </div>
+  <!-- /container -->
+
+
+</body>
+
+</html>
+
+
+<script src="AddressBook.js"></script>

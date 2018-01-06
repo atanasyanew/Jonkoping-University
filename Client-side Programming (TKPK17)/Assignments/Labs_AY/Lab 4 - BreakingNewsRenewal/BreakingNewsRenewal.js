@@ -1,66 +1,4 @@
-<!DOCTYPE html>
-<html>
-<title>lab4 AY</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-red.css">
 
-<style>
-/*
-#newsTicker {
-width: 500px;
-border: 3px solid black;
-background-color: ;
-}
-*/
-</style>  
-
-<body class="w3-margin">
-
-<div class="w3-container w3-theme">
-    <h1>Lab_04, Atanas Yanev</h1>
-</div> <!-- title -->
-      
-<div class="w3-container">
-    <h3>Description</h3>
-    <p>Update News card every few seconds, Breaking news every few seconds</p>
-</div> <!-- lab discription -->
-
-<!-- old
-<div id="newsTicker">
- <h1 id="header"></h1>
- <p id="summary"></p>
- <img id="image" height="150" src="">
- <div>
- <a id="link">Read more...</a>
- </div>
-</div>
--->
-<div class="w3-container w3-margin">
-      <h5 id="beenOnPage2"></h5>
-  <div id="newsTicker" class="w3-card-12" style="width:23%">
-      <div class="w3-container w3-center">
-          <h2 id="header"></h2>
-      </div>
-
-      <img id="image" src="" style="width:100%" class="w3-hover-opacity">
-
-      <div class="w3-container">
-        <p id="summary"></p>
-        <a id="link" class="w3-right">Read more...</a> 
-     </div>
-  </div>
-</div>
-
-<div class="w3-container w3-theme">
-    <p>&copy; Atanas Yanev<span class="w3-right" id="beenOnPage"></span></p>
-</div> <!-- footer -->
-
-</body>
-</html> 
-
-
-<script>
 //GLOBALS VARS
 var timeOnPageLoad = new Date().getTime();
 
@@ -75,17 +13,16 @@ var minutes = Math.floor( (timeDiff/(1000*60))%60 );
 var hours =   Math.floor( (timeDiff/(1000*60*60))%24 );
 var time = "You have been on this page for ";
 
-if (hours > 0) { 
-    time += hours + " hour(s), " + minutes + " minute(s), and " + seconds + " seconds."; 
-    } 
+if (hours > 0) {
+    time += hours + " hour(s), " + minutes + " minute(s), and " + seconds + " seconds.";
+    }
 else if (minutes > 0) {
     time += minutes + " minutes, and " + seconds + " seconds.";
 } else {
      time +=  seconds + " seconds.";
 }
-   
+
 document.getElementById("beenOnPage").innerHTML = time;
-document.getElementById("beenOnPage2").innerHTML = time;
 }
 
 //function for building obj
@@ -97,22 +34,22 @@ this.link = link;
 this.bgcolor = bgcolor;
 }
 
-//declarate objects data 
+//declarate objects data
 var ArticleObj = {};
-ArticleObj.article1 = new BuildArticles( "Worldpost", 
-                                         "Swedish Police Featured In Film Shown By Fox News", 
+ArticleObj.article1 = new BuildArticles( "Worldpost",
+                                         "Swedish Police Featured In Film Shown By Fox News",
                                          "https://i.imgur.com/BetQ9X9.jpg",
                                          "https://goo.gl/mCosSb",
                                          "#FFDB82");
 
-ArticleObj.article2 = new BuildArticles( "Taste", 
-                                         "What’s For Dinner: Beef Larb Is More Than A Funny-Sounding Word", 
+ArticleObj.article2 = new BuildArticles( "Taste",
+                                         "What’s For Dinner: Beef Larb Is More Than A Funny-Sounding Word",
                                          "https://i.imgur.com/FeLCAVr.jpg",
                                          "https://goo.gl/CfK7bf",
                                          "#CFEFFC");
-                    
-ArticleObj.article3 = new BuildArticles( "Entertainment", 
-                                         "Simpson Kills The ‘South Park’ Kids In New Couch Gag", 
+
+ArticleObj.article3 = new BuildArticles( "Entertainment",
+                                         "Simpson Kills The ‘South Park’ Kids In New Couch Gag",
                                          "https://i.imgur.com/FHyvNhG.png",
                                          "https://goo.gl/YizdGC",
                                          "#EBEBDF");
@@ -123,7 +60,7 @@ ArticleArray.push(ArticleObj.article1);
 ArticleArray.push(ArticleObj.article2);
 ArticleArray.push(ArticleObj.article3);
 
-//change DOM 
+//change DOM
 function changeArticle(i) {
 document.getElementById("newsTicker").style.backgroundColor = ArticleArray[i].bgcolor;
 document.getElementById("header").innerHTML = ArticleArray[i].headline;
@@ -144,4 +81,3 @@ setInterval(function() {
 }, 5000);
 
 setInterval(beenOnPage, 1000);
-</script>
