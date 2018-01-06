@@ -3,7 +3,7 @@
 
 Repository for the courses I took place at Jönköping University during the spring of 2017.
 
-#### [Client-side Programming (TKPK17)](http://ju.se/en/study-at-ju/courses.html?courseCode=TKPK17&semester=20171)
+### [Client-side Programming (TKPK17)](http://ju.se/en/study-at-ju/courses.html?courseCode=TKPK17&semester=20171)
 The course comprises modules giving theoretical as well as practical skills for developing
 modern web applications and services.
 The course includes the following parts:
@@ -15,7 +15,7 @@ The course includes the following parts:
 closures
 - New concepts, functions and possibilities in ES6
 
-#### [Web Development with JavaScript and DOM (TWJK14)](http://ju.se/en/study-at-ju/courses.html?courseCode=TWJK14&semester=20141)
+### [Web Development with JavaScript and DOM (TWJK14)](http://ju.se/en/study-at-ju/courses.html?courseCode=TWJK14&semester=20141)
 The course aims to give students a solid introduction to web development on the client side. We
 will go through the concepts and techniques used to design static and dynamic Web pages, some
 common reusable frameworks/libraries for the Web, and provide an introduction to how AJAX
@@ -30,4 +30,4 @@ The course includes the following elements:
 - JavaScript libraries
 - HTML 5
 
-#### [Server-side Web Development (TPWK16)](http://ju.se/JTH/en/education/courses.html?courseCode=TPWK16&semester=20161&lang=en) 
+### [Server-side Web Development (TPWK16)](http://ju.se/JTH/en/education/courses.html?courseCode=TPWK16&semester=20161&lang=en) 
