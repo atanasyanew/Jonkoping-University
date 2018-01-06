@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Lab 7 - Address book</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-red.css">
+  
+
+<body class="w3-margin">
+
+<div class="w3-container w3-theme">
+    <h1>Lab 7 - No more secrets</h1>
+</div> <!-- title -->
+      
+<div class="w3-container">
+    <h3>Description</h3>
+    <p>Lab 7 - No more secrets</p>
+    <p>You just received a mysterious .js –file. It contains an object with two properties; a note and a list of instructions. Can you figure out what the note really means?</p>
+    <p>To understand the instructions, see this example:</p>
+    
+    <div class="w3-code jsHigh notranslate">
+        var note = "I like +Schnitzel";<br>
+        var instructions = {cue:"+", sequence:3};<br>
+    </div>
+    <p>The secret message would in this case be <b>Sch</b>, the three characters following the cue character</p>
+</div> <!-- lab discription -->
+<hr>
+
+<div class="w3-container w3-margin">
+
+
+<h4><b>Note:</b></h4>
+<p id="note"></p>
+    
+<h4><b>Instructions:</b></h4>
+<p id="instructions"></p>
+
+<h4><b>Secret message:</b></h4>
+<p id="secretMsg"></p>
+    
+    
+</div>
+
+
+
+
+
+
+<div class="w3-container w3-theme">
+    <p>&copy; Atanas Yanev</p>
+</div> <!-- footer -->
+
+</body>
+</html> 
+
+
+<script>
+var secretObject = {
+    note:"if I tell you this,you must promise to keep it a secret. Are you up for the challenge? If that is the case then that would be: awesome!",
+    list: [{cue:",", sequence:3}, {cue:".", sequence:4}, {cue:":", sequence:9}]
+};
+
+function noMoreSecrets(secret) {
+  
+   var secretMessage = ""; // storing the secret msg
+   var note = secret.note; // secret repo
+   var list = secret.list; // secret key
+    
+   //loop instructions for the secret
+   for (i = 0; i < list.length; i++) { 
+       
+       //get index char in note based in list array char
+       var MyCharIndex = note.indexOf(list[i]['cue']); 
+       //get number of chars to display (for second argument in substring func)
+       var copyChars = list[i]['sequence'];
+       //just normal substring method that sort results into secretMessage
+       secretMessage += note.substring(MyCharIndex+1, MyCharIndex+copyChars+1);   
+       
+   }
+    
+   return secretMessage;
+}
+
+//document.write(noMoreSecrets(secretObject));
+
+//noMoreSecrets(secretObject);
+
+document.getElementById("note").innerHTML = secretObject.note;
+    
+document.getElementById("instructions").innerHTML = JSON.stringify(secretObject.list); 
+    
+document.getElementById("secretMsg").innerHTML = noMoreSecrets(secretObject);
+</script>
+
