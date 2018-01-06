@@ -1,7 +1,7 @@
-[Jönköping, Sweden](https://ju.se/) <a href="https://ju.se"><img src="https://cdn.rawgit.com/atanasyanew/JKPG-Library/master/_Resources/ju_logo.svg" title="Logo" align="right" height="30" /></a> 
+ <a href="https://ju.se"><img src="docs/ju_logo_black.svg" title="JU" height="50" /></a> 
 ======
 
-Repository for the courses I took place at Jönköping University during the spring of 2017.
+Repository for the courses I took place at [Jönköping University](https://ju.se/) during the spring of 2017.
 
 ### [Client-side Programming (TKPK17)](http://ju.se/en/study-at-ju/courses.html?courseCode=TKPK17&semester=20171)
 The course comprises modules giving theoretical as well as practical skills for developing
