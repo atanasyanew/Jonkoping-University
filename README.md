@@ -1,6 +1,7 @@
  <a href="https://ju.se"><img src="docs/ju_logo_black.svg" title="JU" height="50" /></a> 
 ======
 
+### Description
 Repository for the courses I took place at [Jönköping University](https://ju.se/) during the spring of 2017.
 
 ### [Client-side Programming (TKPK17)](http://ju.se/en/study-at-ju/courses.html?courseCode=TKPK17&semester=20171)
