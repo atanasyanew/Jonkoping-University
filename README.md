@@ -35,7 +35,7 @@ The course includes the following elements:
 The course provides the student with a thorough introduction to server side web development. It
 introduces the concepts and technologies used to develop dynamic web applications, including common
 frameworks and application servers for web development. It also covers security and performance
-optimisation.
+optimization.
 The course includes the following topics:
 - Web programming architectures, patterns, and tools
 - Application servers and frameworks
@@ -46,20 +46,23 @@ The course includes the following topics:
 - Advantages and disadvantages of web applications
 - Cost estimates for web development and hosting
 
-### Brief overview of the assignments and projects
+### Projects, brief overview
 
-- Projects 
-    - [x] [FitLog](https://fitlog-app.firebaseapp.com/signin.html), Client-side Programming
-    - [x] [4Dice-game](https://dice4-game.firebaseapp.com/), Web Development with JavaScript and DOM 
-    - [x] [JKPG-Library](https://github.com/atanasyanew/JKPG-Library), Server-side Web Development
+- [FitLog](https://fitlog-app.firebaseapp.com/signin.html) - Client-side Programming
+- [4Dice-game](https://dice4-game.firebaseapp.com/) - Web Development with JavaScript and DOM 
+- [JKPG-Library](https://github.com/atanasyanew/JKPG-Library) - Server-side Web Development
 
-- Labs (Client-side Programming)		 	 
-    - [x] [Guess the number game](https://rawgit.com/atanasyanew/Jonkoping-University/master/Client-side%20Programming%20(TKPK17)/Assignments/Labs_AY/Lab%201%20-%20GuessNumberGame/GuessNumberGame.html) 	 
-    - [x] [Basic Math with JS](https://rawgit.com/atanasyanew/Jonkoping-University/master/Client-side%20Programming%20(TKPK17)/Assignments/Labs_AY/Lab%202%20-%20BasicMathWithJs/BasicMathWithJs.html), Very very basic math operations with js
-    - [x] [Pub point of sale app](https://rawgit.com/atanasyanew/Jonkoping-University/master/Client-side%20Programming%20(TKPK17)/Assignments/Labs_AY/Lab%203%20-%20PubApp/PubApp.html), Point Of Sale application
-    - [x] [Breaking News Renewal](https://rawgit.com/atanasyanew/Jonkoping-University/master/Client-side%20Programming%20(TKPK17)/Assignments/Labs_AY/Lab%204%20-%20BreakingNewsRenewal/BreakingNewsRenewal.html), Content renewal every 5 sec
-    - [x] [The Guessing Game](https://rawgit.com/atanasyanew/Jonkoping-University/master/Client-side%20Programming%20(TKPK17)/Assignments/Labs_AY/Lab%205%20-%20TheGuessingGame/TheGuessingGame.html) 	 
-    - [x] [Address Book](https://rawgit.com/atanasyanew/Jonkoping-University/master/Client-side%20Programming%20(TKPK17)/Assignments/Labs_AY/Lab%206%20-%20AddressBook/AddressBook.html), LocalStorage Address Book	 
-    - [x] [Secret Message Decipherment](https://rawgit.com/atanasyanew/Jonkoping-University/master/Client-side%20Programming%20(TKPK17)/Assignments/Labs_AY/Lab%207%20-%20SecretMessage/SecretMessage.html), Decipherment message base on instructions
-    - [x] [Breakout-game](https://rawgit.com/atanasyanew/Jonkoping-University/master/Client-side%20Programming%20(TKPK17)/Assignments/Labs_AY/Lab%208%20-%20BreakoutGame/breakout-game.html), Simple Breakout-game	 
-    - [x] [Count Down Page](https://rawgit.com/atanasyanew/Labs/master/CountDownPage/CountDownPage.html), Count Down Page with JS
+Rest of the projects and exercises are included and can be found in the repository directories
+
+
+### Repository content
+
+```
+├───TKPK17 Client-side Programming
+│
+├───TPWK16 Server-side Web Development
+│
+├───TWJK14 Web Development with JavaScript and DOM
+│
+└───Farewell meeting HLK & JTH VT17.pptx
+```

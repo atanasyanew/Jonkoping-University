@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Calculator</title>
+		<script type="text/javascript">
+			
+			document.addEventListener("DOMContentLoaded", function(){
+				
+				document.getElementById('form').addEventListener('submit', function(event){
+					
+					event.preventDefault()
+					
+					var x  = document.getElementById("x").value
+					var op = document.getElementById("op").value
+					var y  = document.getElementById("y").value
+					
+					x = parseInt(x)
+					y = parseInt(y)
+					
+					switch(op){
+						case '+':
+							var res = x + y
+						break
+						case '-':
+							var res = x - y
+						break;
+						case '*':
+							var res = x * y
+						break;
+						case '/':
+							var res = x / y
+						break
+					}
+					
+					document.getElementById("res").innerText = res
+					
+				})
+				
+			})
+			
+		</script>
+	</head>
+	<body>
+		
+		<form id="form">
+			
+			<input type="number" id="x">
+			
+			<select id="op">
+				<option>+</option>
+				<option>-</option>
+				<option>*</option>
+				<option>/</option>
+			</select>
+				
+			<input type="number" id="y">
+			
+			<input type="submit" value="=">
+			
+			<span id="res"></span>
+			
+		</form>
+		
+	</body>
+</html>

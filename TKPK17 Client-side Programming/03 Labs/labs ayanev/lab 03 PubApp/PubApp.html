@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>AY LAB</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body {
+      padding-top: 70px;
+      padding-bottom: 70px;
+      background-color: #333;
+      color: #fff;
+      /*
+  background-color: #DCDCDC;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+      */
+    }
+    
+    footer {
+      color: #999;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!--  navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand">Pub point of sale app</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="container body-content">
+
+    <div class="">
+      <h3>Description</h3>
+      <p>Simple Pub Point Of Sale application. The cashier is able to add a new order and add it to a que for the Barista. A
+        print out summary of today's orders are displayed dynamically in table. The order contains customers first name,
+        beverages, bill. The barista is able to see what type of drink to make and in which order. S/he is able to mark order
+        as done. To keep track the sales, all orders that have been delivered are added to an Report Schedule. At the end
+        of the day the cashier is able to get a summary of all beverages sold.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h3>New Order</h3>
+        <br>
+        <div class="well form-horizontal">
+          <!-- Text input-->
+          <div class="form-group">
+            <div class="col-md-8 col-md-offset-2">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input id="orderClient" required placeholder="Customer Name" class="form-control" type="text">
+              </div>
+            </div>
+          </div>
+          <!-- Text input-->
+          <div class="form-group">
+            <div class="col-md-8 col-md-offset-2">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-glass"></i></span>
+                <textarea id="orderDiscription" class="form-control" placeholder="water, coffe, sandwich... etc" rows="3"></textarea>
+              </div>
+            </div>
+          </div>
+          <!-- Text input-->
+          <div class="form-group">
+            <div class="col-md-8 col-md-offset-2">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-euro"></i></span>
+                <input id="OrderPrice" required placeholder="Bill" class="form-control" type="number">
+              </div>
+            </div>
+          </div>
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-md-2 control-label"></label>
+            <div class="col-md-4">
+              <button type="submit" onclick="addOrder()" class="btn btn-success"><span class="glyphicon glyphicon-floppy-disk"></span> Create Order</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+        <h3>Report Schedule</h3>
+        <br>
+        <h4>Total orders: <b id="reportTotalOrders"></b></h4>
+        <h4>Total incomes: <b id="giveTheMoneyBitch"></b></h4>
+      </div>
+
+    </div>
+
+
+
+    <div class="">
+      <h3>Orders Table</h3>
+      <table class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th nowrap>ID</th>
+            <th nowrap><i class="glyphicon glyphicon-floppy-disk"></i> Created</th>
+            <th nowrap>Status</th>
+            <th nowrap><i class="glyphicon glyphicon-user"></i> Client</th>
+            <th><i class="glyphicon glyphicon-glass"></i> Discription</th>
+            <th nowrap><i class="glyphicon glyphicon-euro"></i></th>
+            <th nowrap><i class="glyphicon glyphicon-ok"></th>
+                  <th nowrap><i class="glyphicon glyphicon-trash"></th>
+                  </tr>
+                </thead>
+                <tbody id="OrdersTable">
+                </tbody>
+              </table>
+    </div>
+
+
+        <hr>
+         <footer class="">
+              <p class="">
+                  Atanas Yanev Labs |
+                  <a href="https://github.com/atanasyanew"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a> |
+              <a href="http://lnked.in/ayanev"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
+              </p>
+              </footer>
+
+
+
+    </div>
+    <!-- /container -->
+
+
+</body>
+
+</html>
+
+
+<script src="PubApp.js"></script>

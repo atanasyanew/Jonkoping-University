@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Pages</title>
+		
+		<style rel="stylesheet">
+			
+			.page{
+				border-radius: 20px;
+				padding: 20px;
+				background-color: aqua;
+				margin: 5px;
+			}
+			
+			.notCurrent{
+				display: none;
+			}
+			
+		</style>
+		
+		<script type="text/javascript">
+			
+			document.addEventListener('DOMContentLoaded', function(){
+				
+				// Grab existing elements.
+				var pagesContainer = document.getElementById('pagesContainer')
+				var pages = document.getElementsByClassName('page')
+				
+				var activePageIndex = 0
+				
+				// Hide all but the active page.
+				for(var i=0; i<pages.length; i++){
+					if(i != activePageIndex){
+						pages[i].classList.add("notCurrent")
+					}
+				}
+				
+				// Create the previous button.
+				var previousButton = document.createElement("button")
+				previousButton.innerText = "Previous"
+				previousButton.addEventListener('click', function(){
+					if(0 < activePageIndex){
+						pages[activePageIndex].classList.add("notCurrent")
+						activePageIndex--
+						pages[activePageIndex].classList.remove("notCurrent")
+					}
+				})
+				document.body.insertBefore(previousButton, pagesContainer)
+				
+				// Create the next button.
+				var nextButton = document.createElement("button")
+				nextButton.innerText = "Next"
+				nextButton.addEventListener('click', function(){
+					if(activePageIndex < pages.length-1){
+						pages[activePageIndex].classList.add("notCurrent")
+						activePageIndex++
+						pages[activePageIndex].classList.remove("notCurrent")
+					}
+				})
+				document.body.insertBefore(nextButton, pagesContainer)
+				
+			})
+			
+		</script>
+	</head>
+	<body>
+		
+		<div id="pagesContainer">
+			
+			<div class="page">
+				<h1>Page A</h1>
+				<p>This is page A.</p>
+			</div>
+				
+			<div class="page">
+				<h1>Page B</h1>
+				<p>This is page B.</p>
+			</div>
+				
+			<div class="page">
+				<h1>Page C</h1>
+				<p>This is page C.</p>
+			</div>
+			
+		</div>
+		
+	</body>
+</html>
