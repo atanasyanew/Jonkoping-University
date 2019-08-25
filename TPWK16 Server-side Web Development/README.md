@@ -59,17 +59,4 @@ Repository for the course [Server-side Web Development (TPWK16)](http://ju.se/JT
 
 ### Coursework
 
- - [JKPG-Library](04\ Coursework/)
-
-
-
-
-
-
-
-
-
-
-
-
-
+ - [JKPG-Library](04%20Coursework/)

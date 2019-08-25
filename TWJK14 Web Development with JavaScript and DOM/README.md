@@ -55,4 +55,4 @@ Repository for the course [Web Development with JavaScript and DOM (TWJK14)](htt
 
 ### Coursework
 
- - [4Dice-game](03\ Exercises/coursework-4Dice-game)
+ - [4Dice-game](03%20Exercises/coursework-4Dice-game)

@@ -104,4 +104,4 @@ Repository for the course [Client-side Programming (TKPK17)](http://ju.se/en/stu
 
 ### Coursework
 
- - [FitLog](04\ Coursework/Project\ ayanev)
+ - [FitLog](04%20Coursework/Project%20ayanev)
